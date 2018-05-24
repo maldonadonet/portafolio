@@ -16,7 +16,7 @@ export class InformacionService {
   public carga_info(){
       this.http.get("https://portafolio-6c3f1.firebaseio.com/equipo.json")
                 .subscribe( data=>{
-                    console.log(data.json());
+                    //console.log(data.json());
                     this.cargada = true;
                     this.equipo = data.json();
                 })
